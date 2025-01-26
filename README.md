@@ -23,7 +23,11 @@
 <p align="center">
   Student | ENTC | Tech Enthusiast
 </p>
----
+
+
+-------
+
+
 ## 🧐 About
 🏄‍ Community guy who loves being involved in communities and help fellow students grow
 - 😄 I will usually be a part of hackathons as a #Participants
