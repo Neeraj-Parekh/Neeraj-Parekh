@@ -14,9 +14,11 @@
 
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=BE3AF7&width=435&lines=Electronics+Engineer;Embedded+system+designer;Cloud+Engineer;Editor" alt="Typing SVG" /></a>
+## I AM A
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=BE3AF7&width=435&lines=Electronics+Engineer;Embedded+system+designer;Cloud+Engineer;Editor" alt="Typing SVG" /></a>
 
 </p>
+
 <!--
 **Neeraj-Parekh/Neeraj-Parekh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
