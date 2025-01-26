@@ -59,8 +59,8 @@
       <a href="https://www.gnu.org/software/bash/">
         <img src="https://img.shields.io/badge/BASH-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
       </a>
-      <a href="https://www.java.com/en/">
-        <img src="(https://img.shields.io/badge/-c++-black?logo=c%2B%2B&style=social)"/>
+      <a href="https://isocpp.org/">
+        <img src="[(https://img.shields.io/badge/-c++-black?logo=c%2B%2B&style=social)](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)"/>
       </a>
       <a href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4">
         <img src="https://img.shields.io/badge/powershell-0175C2?style=for-the-badge&logo=powershell&logoColor=white" />
