@@ -33,7 +33,7 @@
 - 😄 I will usually be a part of hackathons as a #Participants
 - 🔭 I am currently an Student @MITAOE ,Alandi
 - 🌱  Learning :
---✨ VLSI 
+- -✨ VLSI 
 --✨ EMBEDDED SYSTEM , KICAD CIRCUIT DESIGN
   -✨ CLOUD COMPUTING 
   -✨ Badminton (Neighbourhood Professional XD) 
