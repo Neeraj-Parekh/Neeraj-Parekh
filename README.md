@@ -34,7 +34,7 @@
 - 🔭 I am currently an Student @MITAOE ,Alandi
 - 🌱  Learning :
 - ✨ VLSI 
--  ✨ EMBEDDED SYSTEM , KICAD CIRCUIT DESIGN
+-    ✨ EMBEDDED SYSTEM , KICAD CIRCUIT DESIGN
   -✨ CLOUD COMPUTING 
   -✨ Badminton (Neighbourhood Professional XD) 
 - 👯 And Many More.
