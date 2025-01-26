@@ -35,8 +35,8 @@
 - 🌱  Learning :
 - ✨ VLSI 
 -    ✨ EMBEDDED SYSTEM , KICAD CIRCUIT DESIGN
-  -✨ CLOUD COMPUTING 
-  -✨ Badminton (Neighbourhood Professional XD) 
+-  ✨ CLOUD COMPUTING 
+-  ✨ Badminton (Neighbourhood Professional XD) 
 - 👯 And Many More.
 
 <!--
