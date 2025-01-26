@@ -20,6 +20,10 @@
 
 </p>
 
+<p align="center">
+  Student | ENTC | Tech Enthusiast
+</p>
+
 <!--
 **Neeraj-Parekh/Neeraj-Parekh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
