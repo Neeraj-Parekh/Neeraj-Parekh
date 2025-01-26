@@ -23,6 +23,17 @@
 <p align="center">
   Student | ENTC | Tech Enthusiast
 </p>
+---
+## 🧐 About
+🏄‍ Community guy who loves being involved in communities and help fellow students grow
+- 😄 I will usually be a part of hackathons as a #Participants
+- 🔭 I am currently an Student @MITAOE ,Alandi
+- 🌱  Learning :
+✨ VLSI 
+✨ EMBEDDED SYSTEM , KICAD CIRCUIT DESIGN
+✨ CLOUD COMPUTING 
+✨ Badminton (Neighbourhood Professional XD) 
+- 👯 And Many More.
 
 <!--
 **Neeraj-Parekh/Neeraj-Parekh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
