@@ -10,6 +10,13 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
 </picture>
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=9400D3&center=true&vCenter=true&width=435&lines=Electronics+Engineer;Embedded system designer ;Cloud+Engineer;Editor;" alt="Typing SVG" />
+
+</p>
 <!--
 **Neeraj-Parekh/Neeraj-Parekh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
