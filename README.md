@@ -52,6 +52,8 @@
   </tr>
 To include the C++ badge in your HTML code, you need to replace the incorrect image source in the last `<a>` tag with the correct URL. Here's how you can do that:
 
+To add a C Embedded badge, you can include a new `<a>` tag with the appropriate badge URL. Here's how you can update your code to include it:
+
  <tr>
     <td>Languages</td>
     <td>
@@ -70,9 +72,13 @@ To include the C++ badge in your HTML code, you need to replace the incorrect im
       <a href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4">
         <img src="https://img.shields.io/badge/powershell-0175C2?style=for-the-badge&logo=powershell&logoColor=white" />
       </a>
+      <a href="https://www.cprogramming.com/">
+        <img src="https://img.shields.io/badge/C%20Embedded-00599C?style=for-the-badge&logo=c&logoColor=white" />
+      </a>
     </td>
   </tr>
  
+  
    <tr>
     <td>Database</td>
     <td>
