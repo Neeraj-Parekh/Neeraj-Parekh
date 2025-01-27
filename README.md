@@ -79,26 +79,21 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
   </tr>
  
   
-  <tr>
+<tr>
     <td>Tools & Technologies</td>
     <td>
       <a href="https://www.mathworks.com/products/matlab.html">
         <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"/>
       </a>
-      <a href="https://www.cadence.com/">
-        <img src="https://img.shields.io/badge/Cadence-0070C0?style=for-the-badge&logo=cadence&logoColor=white"/>
+      <a href="https://www.kicad.org/">
+        <img src="https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white"/>
       </a>
-      <a href="https://www.altium.com/">
-        <img src="https://img.shields.io/badge/Altium%20Designer-007BFF?style=for-the-badge&logo=altiumdesigner&logoColor=white"/>
-      </a>
-      <a href="https://www.xilinx.com/">
-        <img src="https://img.shields.io/badge/Xilinx-AC2D32?style=for-the-badge&logo=xilinx&logoColor=white"/>
-      </a>
-      <a href="https://www.ni.com/en-us.html">
-        <img src="https://img.shields.io/badge/NI%20LabVIEW-FFDB00?style=for-the-badge&logo=nationalinstruments&logoColor=black"/>
+      <a href="https://www.multisim.com/">
+        <img src="https://img.shields.io/badge/Multisim-FF6600?style=for-the-badge&logo=ni&logoColor=white"/>
       </a>
     </td>
   </tr>
+  
 
   <tr>
     <td>Services & Tools</td>
@@ -106,10 +101,7 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
       <a href="https://github.com/">
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
       </a>
-      <a href="https://www.apachefriends.org/">
-        <img src="https://img.shields.io/badge/xampp-FB7A24?style=for-the-badge&logo=xampp&logoColor=white"/>
-      </a>
-      <a href="https://www.office.com">
+           <a href="https://www.office.com">
         <img src="https://img.shields.io/badge/Office%20365-857ee0?style=for-the-badge&logo=microsoft"/>
       </a>
       <a href="https://www.wireshark.org">
@@ -118,10 +110,7 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
       <a href="https://www.brave.com">
         <img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white"/>
       </a>
-      <a href="https://www.adobe.com/">
-        <img src="https://img.shields.io/badge/Adobe-FF0000?style=for-the-badge&logo=adobe&logoColor=white"/>
-      </a>
-      <a href="https://www.proton.ch">
+         <a href="https://www.proton.ch">
         <img src="https://img.shields.io/badge/Proton-7438f8?style=for-the-badge&logo=proton&logoColor=white"/>
       </a>
     </td>
