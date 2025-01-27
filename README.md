@@ -79,14 +79,23 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
   </tr>
  
   
-   <tr>
-    <td>Database</td>
+  <tr>
+    <td>Tools & Technologies</td>
     <td>
-      <a href="https://mariadb.org/">
-        <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>
+      <a href="https://www.mathworks.com/products/matlab.html">
+        <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"/>
       </a>
-      <a href="https://www.mysql.com/">
-        <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
+      <a href="https://www.cadence.com/">
+        <img src="https://img.shields.io/badge/Cadence-0070C0?style=for-the-badge&logo=cadence&logoColor=white"/>
+      </a>
+      <a href="https://www.altium.com/">
+        <img src="https://img.shields.io/badge/Altium%20Designer-007BFF?style=for-the-badge&logo=altiumdesigner&logoColor=white"/>
+      </a>
+      <a href="https://www.xilinx.com/">
+        <img src="https://img.shields.io/badge/Xilinx-AC2D32?style=for-the-badge&logo=xilinx&logoColor=white"/>
+      </a>
+      <a href="https://www.ni.com/en-us.html">
+        <img src="https://img.shields.io/badge/NI%20LabVIEW-FFDB00?style=for-the-badge&logo=nationalinstruments&logoColor=black"/>
       </a>
     </td>
   </tr>
