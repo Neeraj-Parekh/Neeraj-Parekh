@@ -1,3 +1,6 @@
+
+
+
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" width="1920" />
 
 <div align="center">
@@ -47,28 +50,30 @@
     <th>Category</th>
     <th>Skills</th>
   </tr>
-  <tr>
+To include the C++ badge in your HTML code, you need to replace the incorrect image source in the last `<a>` tag with the correct URL. Here's how you can do that:
+
+ <tr>
     <td>Languages</td>
     <td>
       <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
       </a>
-     <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
+      <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
         <img src="https://img.shields.io/badge/C%23-00599C?style=for-the-badge&logo=c%23&logoColor=white"/>
       </a>
       <a href="https://www.gnu.org/software/bash/">
         <img src="https://img.shields.io/badge/BASH-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
       </a>
       <a href="https://isocpp.org/">
-        <img src="[![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)"/>
+        <img src="https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white"/>
       </a>
       <a href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4">
         <img src="https://img.shields.io/badge/powershell-0175C2?style=for-the-badge&logo=powershell&logoColor=white" />
       </a>
     </td>
   </tr>
-  
-  <tr>
+ 
+   <tr>
     <td>Database</td>
     <td>
       <a href="https://mariadb.org/">
