@@ -14,9 +14,10 @@
 
 
 <p align="center">
-  <div align="centre">
+  <div align="centre"> 
 <h1> I AM A </h1><br> </div>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=BE3AF7&width=435&lines=Electronics+Engineer;Embedded+system+designer;Cloud+Engineer;Editor" alt="Typing SVG" /></a>
+<p align="center">
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=BE3AF7&width=435&lines=Electronics+Engineer;Embedded+system+designer;Cloud+Engineer;Editor" alt="Typing SVG" /></a> </p>p>
 
 </p>
 
