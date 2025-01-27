@@ -112,6 +112,9 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
       </a>
          <a href="https://www.proton.ch">
         <img src="https://img.shields.io/badge/Proton-7438f8?style=for-the-badge&logo=proton&logoColor=white"/>
+           <a href="https://obsidian.md/">
+  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white"/>
+</a>
       </a>
     </td>
   </tr>
@@ -128,20 +131,20 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
       <a href="https://notepad-plus-plus.org/">
         <img src="https://img.shields.io/badge/Notepad++-90E59A?style=for-the-badge&logo=notepad%2B%2B&logoColor=black" />
       </a>
-      <a href="https://www.jetbrains.com/idea/">
+    <!--  <a href="https://www.jetbrains.com/idea/">
         <img src="https://img.shields.io/badge/IntelliJ IDEA-e22c63?style=for-the-badge&logo=intellij%20idea&logoColor=white" />
       </a>
       <a href="https://www.jetbrains.com/webstorm/">
         <img src="https://img.shields.io/badge/WebStorm-eaeb00?style=for-the-badge&logo=webstorm&logoColor=black" />
-      </a>
+      </a> -->
       <a href="https://www.jetbrains.com/pycharm/">
         <img src="https://img.shields.io/badge/PyCharm-d8ee52?style=for-the-badge&logo=pycharm&logoColor=black" />
         </a>
       <a href="https://www.jetbrains.com/datagrip/">
       <img src="https://img.shields.io/badge/datagrip-16a53e?style=for-the-badge&logo=datagrip&logoColor=white" />
     </a>
-    <a href="https://www.adobe.com/products/dreamweaver.html">
-      <img src="https://img.shields.io/badge/Adobe%20Dreamweaver-FF61F6?style=for-the-badge&logo=adobe%20dreamweaver&logoColor=white" />
+   <!-- <a href="https://www.adobe.com/products/dreamweaver.html">
+      <img src="https://img.shields.io/badge/Adobe%20Dreamweaver-FF61F6?style=for-the-badge&logo=adobe%20dreamweaver&logoColor=white" /> -->
     </td>
   </tr>
   <tr>
@@ -178,13 +181,13 @@ To add a C Embedded badge, you can include a new `<a>` tag with the appropriate 
 # Projects <img src="https://user-images.githubusercontent.com/74038190/221857969-f37e1717-1470-4fe4-abb5-88b334cf64ea.png" alt="icon of Project" width="28" />
 
 
-| Projects  |                             Deployed Link                   |                   Repository                     | Tech Stack & Tools                                                                                         |
-| :-------- | :--------------------------------------------------------:  | :----------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
-| B-Backup  | [B-Backup](https://github.com/An0n-00/B-Backup?tab=readme-ov-file) | [GitHub](https://github.com/An0n-00/B-Backup?tab=readme-ov-file) | `Bash` `IntelliJ Idea` `Jetbrains Gateway` `Kali` `Ubuntu` `VSC`                    |
-| FileSync  | [FileSync](https://github.com/An0n-00/FileSync?tab=readme-ov-file) | [GitHub](https://github.com/An0n-00/FileSync?tab=readme-ov-file) | `PowerShell` `Visual Studio Code` `Windows RoboCopy.exe`                            |
-| SpotifyAB | [SpotifyAB](https://github.com/An0n-00/SpotifyAB/releases/) | [GitHub](https://github.com/An0n-00/SpotifyAB)   | `C#` `WinForms` `PowerShell` `JavaScript` `HTML` `Visual Studio Code` `Visual Studio` `Advanced Installer` |
-| Spotify-ad-hosts | [Spotify-ad-hosts](https://github.com/An0n-00/Spotify-ad-hosts/blob/main/hosts) | [GitHub](https://github.com/An0n-00/Spotify-ad-hosts) | `WireShark` `PowerShell` `Visual Studio Code`                              |
-
+| Projects  | Deployed Link | Repository | Tech Stack & Tools |
+| :-------- | :-----------: | :--------: | :----------------: |
+| a | a | a | `stack-a` |
+| b | b | b | `stack-b` |
+| c | c | c | `stack-c` |
+| d | d | d | `stack-d` |
+| e | e | e | `stack-e` |
 
 
 <!--
