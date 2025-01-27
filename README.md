@@ -1,4 +1,4 @@
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0019.gif" />
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" />
 
 <div align="center">
   <h1>Hi there, I'm Neeraj Parekh 👋</h1>
