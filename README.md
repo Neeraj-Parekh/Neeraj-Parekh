@@ -10,7 +10,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
 </picture>
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0019.gif" height="22" width="1920" />
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0019.gif"  width="1920" />
 
 
 <p align="center">
@@ -60,7 +60,7 @@
         <img src="https://img.shields.io/badge/BASH-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
       </a>
       <a href="https://isocpp.org/">
-        <img src="[(https://img.shields.io/badge/-c++-black?logo=c%2B%2B&style=social)](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)"/>
+        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white"/>
       </a>
       <a href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4">
         <img src="https://img.shields.io/badge/powershell-0175C2?style=for-the-badge&logo=powershell&logoColor=white" />
