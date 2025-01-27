@@ -1,4 +1,4 @@
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0019.gif" />
 
 <div align="center">
   <h1>Hi there, I'm Neeraj Parekh 👋</h1>
@@ -10,7 +10,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
 </picture>
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0242.gif" />
 
 
 <p align="center">
