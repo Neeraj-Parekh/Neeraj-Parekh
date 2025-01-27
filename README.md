@@ -60,7 +60,7 @@
         <img src="https://img.shields.io/badge/BASH-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
       </a>
       <a href="https://isocpp.org/">
-        [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
+        <img src="[![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)"/>
       </a>
       <a href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4">
         <img src="https://img.shields.io/badge/powershell-0175C2?style=for-the-badge&logo=powershell&logoColor=white" />
