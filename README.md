@@ -50,9 +50,7 @@
     <th>Category</th>
     <th>Skills</th>
   </tr>
-To include the C++ badge in your HTML code, you need to replace the incorrect image source in the last `<a>` tag with the correct URL. Here's how you can do that:
-
-To add a C Embedded badge, you can include a new `<a>` tag with the appropriate badge URL. Here's how you can update your code to include it:
+ 
 
  <tr>
     <td>Languages</td>
