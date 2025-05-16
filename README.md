@@ -1,6 +1,4 @@
-![github-user-contribution (1)](https://github.com/user-attachments/assets/02ec2086-91d3-4532-ab98-4d82fbfddb4e)![github-user-contribution](https://github.com/user-attachments/assets/d47715f4-134d-4fc8-a046-8a8871fef16b)
-
-
+ 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" width="1920" />
 
 <div align="center">
@@ -8,13 +6,11 @@
   <br>
 </div>
 
----
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution%20(1).svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
   <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
 </picture>
-
 
 <p align="center">
   <div align="centre"> 
@@ -188,6 +184,21 @@
 | e | e | e | `stack-e` |
 -->
 
+## 🚀 Projects Showcase
+
+| 🌟 Project Name | 🌐 Deployed Link | 📂 Repository | 🛠️ Tech Stack & Tools |
+| :-- | :--: | :--: | :--: |
+| **Portfolio Website**<br><sup>Personal portfolio and blog</sup> | [🔗 Live Site](https://neeraj-parekh.github.io) | [GitHub](https://github.com/Neeraj-Parekh/neeraj-parekh.github.io) | ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square) ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square) |
+| **FocusFlow App**<br><sup>Linux to Android seamless focus app</sup> | — | [GitHub](https://github.com/Neeraj-Parekh/focusflow-app) | ![Shell](https://img.shields.io/badge/-Shell-lightgrey?style=flat-square) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square) ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square) ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square) |
+| **EDS Laboratory Assignments**<br><sup>Python, CISCO Certs & more</sup> | — | [GitHub](https://github.com/Neeraj-Parekh/E22-Neeraj-Parekh-EDS-REPO) | ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Cython](https://img.shields.io/badge/-Cython-darkblue?style=flat-square) ![C++](https://img.shields.io/badge/-C++-blue?style=flat-square) ![C](https://img.shields.io/badge/-C-grey?style=flat-square) ![Jupyter](https://img.shields.io/badge/-Jupyter-orange?style=flat-square) |
+| **Profile Config**<br><sup>GitHub profile README and badges</sup> | — | [GitHub](https://github.com/Neeraj-Parekh/Neeraj-Parekh) | ![Markdown](https://img.shields.io/badge/-Markdown-darkgreen?style=flat-square) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white) |
+| **Hardware Workshop Management**<br><sup>College store system</sup> | [🔗 Google Site](https://sites.google.com/view/store-management-system-mitaoe) | — | ![Google Sites](https://img.shields.io/badge/-Google%20Sites-blue?style=flat-square) ![Web Design](https://img.shields.io/badge/-Web%20Design-orange?style=flat-square) |
+| **Aeromodelling Team (SAEINDIA DDC 2025)**<br><sup>VTOL & Regular Aircraft</sup> | — | — | ![Aerodynamics](https://img.shields.io/badge/-Aerodynamics-lightblue?style=flat-square) ![3D Design](https://img.shields.io/badge/-3D%20Design-yellowgreen?style=flat-square) ![Engineering](https://img.shields.io/badge/-Engineering-grey?style=flat-square) |
+| **LPG Gas Detector & IoT Systems**<br><sup>MQ-6, LM-358, ESP32</sup> | — | — | ![Embedded](https://img.shields.io/badge/-Embedded-blue?style=flat-square) ![IoT](https://img.shields.io/badge/-IoT-green?style=flat-square) ![PCB Design](https://img.shields.io/badge/-PCB%20Design-lightgreen?style=flat-square) ![ESP32](https://img.shields.io/badge/-ESP32-black?style=flat-square) |
+| **Book Recommendation System (LLM)**<br><sup>AI, NLP, LangChain</sup> | — | — | ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![LangChain](https://img.shields.io/badge/-LangChain-darkblue?style=flat-square) ![LLM](https://img.shields.io/badge/-LLM-yellow?style=flat-square) ![AI](https://img.shields.io/badge/-AI-red?style=flat-square) |
+| **Microwave Imaging (Land Coverage)**<br><sup>Random Forest, Sentinel-1</sup> | — | — | ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![SNAP](https://img.shields.io/badge/-SNAP-darkgreen?style=flat-square) ![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-orange?style=flat-square) |
+
+ 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neeraj-Parekh&layout=compact&theme=radical" alt="Top Languages" />
 </p>
