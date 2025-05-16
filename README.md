@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution%20(1).svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
-  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
 </picture>
 
 
