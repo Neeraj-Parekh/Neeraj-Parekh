@@ -1,7 +1,7 @@
 
 
 
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" width="1920" />
+// <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" width="1920" />
 
 <div align="center">
   <h1>Hi there, I'm Neeraj Parekh 👋</h1>
