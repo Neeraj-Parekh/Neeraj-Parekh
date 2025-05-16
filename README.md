@@ -1,4 +1,4 @@
-
+![github-user-contribution (1)](https://github.com/user-attachments/assets/02ec2086-91d3-4532-ab98-4d82fbfddb4e)![github-user-contribution](https://github.com/user-attachments/assets/d47715f4-134d-4fc8-a046-8a8871fef16b)
 
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0170.gif" width="1920" />
@@ -7,13 +7,13 @@
   <h1>Hi there, I'm Neeraj Parekh 👋</h1>
   <br>
 </div>
-<!-->
+
+---
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/an0n-00/an0n-00/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution%20(1).svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
+  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Neeraj-Parekh/Neeraj-Parekh/main/github-user-contribution.svg" />
 </picture>
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0019.gif"  width="1920" />
 
 
 <p align="center">
@@ -178,7 +178,7 @@
 
 # Projects <img src="https://user-images.githubusercontent.com/74038190/221857969-f37e1717-1470-4fe4-abb5-88b334cf64ea.png" alt="icon of Project" width="28" />
 
-
+<!--
 | Projects  | Deployed Link | Repository | Tech Stack & Tools |
 | :-------- | :-----------: | :--------: | :----------------: |
 | a | a | a | `stack-a` |
@@ -186,8 +186,14 @@
 | c | c | c | `stack-c` |
 | d | d | d | `stack-d` |
 | e | e | e | `stack-e` |
+-->
 
-
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neeraj-Parekh&layout=compact&theme=radical" alt="Top Languages" />
+</p>
+<p align="right">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Neeraj-Parekh.Neeraj-Parekh" alt="Visitor Badge" />
+</p>
 <!--
 **Neeraj-Parekh/Neeraj-Parekh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
