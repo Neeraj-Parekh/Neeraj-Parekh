@@ -1,0 +1,20 @@
+{
+  "performance_metrics": {
+    "uptime_seconds": 5.003022,
+    "uptime_formatted": "0:00:05",
+    "metrics_recorded": 0,
+    "monitoring_active": true
+  },
+  "memory_stats": {
+    "total_memory": 0,
+    "used_memory": 50,
+    "available_memory": 0,
+    "process_memory": 50,
+    "leak_detected": false,
+    "cleanup_count": 1,
+    "timestamp": "2025-08-31 11:39:49.003419"
+  },
+  "active_threads": 1,
+  "last_cleanup": "2025-08-31T11:39:49.003332",
+  "uptime": 0.000119
+}

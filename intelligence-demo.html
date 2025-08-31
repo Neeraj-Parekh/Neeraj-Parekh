@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow Intelligence Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .demo-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .demo-card h3 {
+            color: #5a67d8;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .demo-card .icon {
+            font-size: 1.2em;
+        }
+        
+        .demo-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            background: #f7fafc;
+            border-left: 4px solid #48bb78;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .status.warning {
+            border-left-color: #ed8936;
+            background: #fffbf0;
+        }
+        
+        .status.error {
+            border-left-color: #f56565;
+            background: #fef5f5;
+        }
+        
+        .log {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        
+        .log .log-entry {
+            margin-bottom: 5px;
+            padding: 2px 0;
+        }
+        
+        .log .log-entry.info {
+            color: #63b3ed;
+        }
+        
+        .log .log-entry.success {
+            color: #68d391;
+        }
+        
+        .log .log-entry.warning {
+            color: #fbd38d;
+        }
+        
+        .log .log-entry.error {
+            color: #fc8181;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .metric {
+            text-align: center;
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .metric .value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #5a67d8;
+        }
+        
+        .metric .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .controls {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        
+        .controls h3 {
+            color: #5a67d8;
+            margin-bottom: 15px;
+        }
+        
+        .control-group {
+            margin-bottom: 20px;
+        }
+        
+        .control-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .control-group select,
+        .control-group input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .task-list {
+            background: #f7fafc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .task-item {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .task-item .task-title {
+            font-weight: 500;
+            color: #2d3748;
+        }
+        
+        .task-item .task-meta {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .device-list {
+            background: #f7fafc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .device-item {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .device-item:last-child {
+            border-bottom: none;
+        }
+        
+        .device-info {
+            flex: 1;
+        }
+        
+        .device-name {
+            font-weight: 500;
+            color: #2d3748;
+        }
+        
+        .device-status {
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        .device-status.online {
+            color: #48bb78;
+        }
+        
+        /* Focus mode styles */
+        .focus-mode-strict {
+            filter: grayscale(0.3);
+        }
+        
+        .focus-mode-dnd::before {
+            content: "🔕 Do Not Disturb Mode Active";
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #f56565;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 FocusFlow Intelligence Demo</h1>
+            <p>Automated productivity optimization powered by AI</p>
+        </div>
+        
+        <div class="demo-grid">
+            <!-- Activity Tracker Demo -->
+            <div class="demo-card">
+                <h3><span class="icon">📊</span> Universal Activity Tracker</h3>
+                <p>Monitors your activity patterns and provides intelligent insights for productivity optimization.</p>
+                
+                <button class="btn" onclick="startActivityTracking()">Start Tracking</button>
+                <button class="btn" onclick="stopActivityTracking()">Stop Tracking</button>
+                
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="value" id="productivity-score">--</div>
+                        <div class="label">Productivity Score</div>
+                    </div>
+                    <div class="metric">
+                        <div class="value" id="focus-level">--</div>
+                        <div class="label">Focus Level</div>
+                    </div>
+                    <div class="metric">
+                        <div class="value" id="activity-category">--</div>
+                        <div class="label">Activity Type</div>
+                    </div>
+                </div>
+                
+                <div class="status" id="tracking-status">
+                    <strong>Status:</strong> Ready to start tracking
+                </div>
+            </div>
+            
+            <!-- Predictive Task Engine Demo -->
+            <div class="demo-card">
+                <h3><span class="icon">🎯</span> Predictive Task Engine</h3>
+                <p>Automatically generates task suggestions based on your patterns and context.</p>
+                
+                <button class="btn" onclick="generatePredictions()">Generate Predictions</button>
+                <button class="btn" onclick="clearPredictions()">Clear Tasks</button>
+                
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="value" id="predicted-tasks">0</div>
+                        <div class="label">Predicted Tasks</div>
+                    </div>
+                    <div class="metric">
+                        <div class="value" id="confidence-avg">--</div>
+                        <div class="label">Avg Confidence</div>
+                    </div>
+                </div>
+                
+                <div class="task-list" id="predicted-task-list">
+                    <p>No predictions yet. Click "Generate Predictions" to start.</p>
+                </div>
+            </div>
+            
+            <!-- Environment Controller Demo -->
+            <div class="demo-card">
+                <h3><span class="icon">🌟</span> Smart Environment Controller</h3>
+                <p>Automatically optimizes your physical environment for different types of work.</p>
+                
+                <div class="control-group">
+                    <label for="environment-profile">Select Profile:</label>
+                    <select id="environment-profile">
+                        <option value="DEEP_WORK">Deep Work Focus</option>
+                        <option value="CREATIVE">Creative Flow</option>
+                        <option value="MEETING">Meeting Ready</option>
+                        <option value="BREAK">Restorative Break</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" value="25" min="5" max="120">
+                </div>
+                
+                <button class="btn" onclick="applyEnvironmentProfile()">Apply Profile</button>
+                <button class="btn" onclick="revertEnvironment()">Revert to Normal</button>
+                <button class="btn" onclick="toggleAutoOptimization()">Toggle Auto-Optimization</button>
+                
+                <div class="device-list" id="device-list">
+                    <p>Discovering devices...</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Global Controls -->
+        <div class="controls">
+            <h3>🎮 Global Controls</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <div class="control-group">
+                    <label>Demo Scenario:</label>
+                    <select id="demo-scenario" onchange="runDemoScenario()">
+                        <option value="">Select scenario...</option>
+                        <option value="deep_work">Deep Work Session</option>
+                        <option value="creative_burst">Creative Burst</option>
+                        <option value="meeting_prep">Meeting Preparation</option>
+                        <option value="break_time">Break Time</option>
+                        <option value="distraction_recovery">Distraction Recovery</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label>User ID:</label>
+                    <input type="text" id="user-id" value="demo_user_123">
+                </div>
+                
+                <div class="control-group">
+                    <label>Simulation Speed:</label>
+                    <select id="simulation-speed">
+                        <option value="1">1x (Real-time)</option>
+                        <option value="5" selected>5x (Fast)</option>
+                        <option value="10">10x (Very Fast)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="startFullDemo()">🚀 Start Full Demo</button>
+            <button class="btn" onclick="stopAllSystems()">⏹️ Stop All Systems</button>
+            <button class="btn" onclick="clearAllLogs()">🗑️ Clear Logs</button>
+        </div>
+        
+        <!-- System Log -->
+        <div class="demo-card">
+            <h3><span class="icon">📝</span> System Log</h3>
+            <div class="log" id="system-log">
+                <div class="log-entry info">System initialized and ready...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load the TypeScript modules (compiled to JavaScript for demo) -->
+    <script src="ActivityTracker.js"></script>
+    <script src="PredictiveTaskEngine.js"></script>
+    <script src="EnvironmentController.js"></script>
+    
+    <script>
+        // Demo Application Logic
+        let activityTracker = null;
+        let taskEngine = null;
+        let environmentController = null;
+        let isFullDemoRunning = false;
+        let demoIntervals = [];
+        
+        // Initialize systems
+        function initializeSystems() {
+            try {
+                activityTracker = new UniversalActivityTracker();
+                taskEngine = new PredictiveTaskEngine();
+                environmentController = new EnvironmentController();
+                
+                logMessage('All systems initialized successfully', 'success');
+                
+                // Set up event listeners
+                setupEventListeners();
+                
+                // Update device list
+                updateDeviceList();
+                
+            } catch (error) {
+                logMessage(`Failed to initialize systems: ${error.message}`, 'error');
+            }
+        }
+        
+        function setupEventListeners() {
+            // Activity tracker events
+            window.addEventListener('optimize-environment', (event) => {
+                logMessage(`Environment optimization triggered: ${event.detail.mode}`, 'info');
+            });
+            
+            window.addEventListener('suggest-break', (event) => {
+                logMessage(`Break suggested: ${event.detail.reason}`, 'warning');
+                showNotification('💤 Time for a break!', 'Distraction detected - consider taking a short break');
+            });
+            
+            window.addEventListener('potential-task-detected', (event) => {
+                logMessage(`Potential task detected: ${event.detail.suggestedTitle}`, 'info');
+            });
+            
+            window.addEventListener('task-auto-created', (event) => {
+                logMessage(`Task auto-created: ${event.detail.task.title}`, 'success');
+                updatePredictedTasks();
+            });
+            
+            window.addEventListener('environment-changed', (event) => {
+                logMessage(`Environment changed: ${event.detail.profile.name}`, 'success');
+            });
+        }
+        
+        // Activity Tracker Functions
+        async function startActivityTracking() {
+            if (!activityTracker) {
+                logMessage('Activity tracker not initialized', 'error');
+                return;
+            }
+            
+            try {
+                const userId = document.getElementById('user-id').value;
+                await activityTracker.startTracking(userId);
+                
+                document.getElementById('tracking-status').innerHTML = '<strong>Status:</strong> Tracking active';
+                document.getElementById('tracking-status').className = 'status';
+                
+                logMessage('Activity tracking started', 'success');
+                
+                // Start updating metrics
+                startMetricsUpdate();
+                
+            } catch (error) {
+                logMessage(`Failed to start tracking: ${error.message}`, 'error');
+            }
+        }
+        
+        function stopActivityTracking() {
+            if (activityTracker) {
+                activityTracker.stopTracking();
+                document.getElementById('tracking-status').innerHTML = '<strong>Status:</strong> Tracking stopped';
+                document.getElementById('tracking-status').className = 'status warning';
+                logMessage('Activity tracking stopped', 'warning');
+                
+                stopMetricsUpdate();
+            }
+        }
+        
+        function startMetricsUpdate() {
+            const interval = setInterval(() => {
+                // Mock real-time metrics
+                const productivityScore = (Math.random() * 0.4 + 0.6).toFixed(2);
+                const focusLevel = (Math.random() * 0.3 + 0.5).toFixed(2);
+                const categories = ['DEEP_WORK', 'PRODUCTIVE', 'ADMINISTRATIVE', 'NEUTRAL', 'DISTRACTING'];
+                const category = categories[Math.floor(Math.random() * categories.length)];
+                
+                document.getElementById('productivity-score').textContent = productivityScore;
+                document.getElementById('focus-level').textContent = focusLevel;
+                document.getElementById('activity-category').textContent = category;
+                
+                // Color code based on productivity
+                const scoreElement = document.getElementById('productivity-score');
+                if (productivityScore > 0.8) {
+                    scoreElement.style.color = '#48bb78';
+                } else if (productivityScore > 0.6) {
+                    scoreElement.style.color = '#ed8936';
+                } else {
+                    scoreElement.style.color = '#f56565';
+                }
+                
+            }, 2000);
+            
+            demoIntervals.push(interval);
+        }
+        
+        function stopMetricsUpdate() {
+            document.getElementById('productivity-score').textContent = '--';
+            document.getElementById('focus-level').textContent = '--';
+            document.getElementById('activity-category').textContent = '--';
+        }
+        
+        // Task Engine Functions
+        async function generatePredictions() {
+            if (!taskEngine) {
+                logMessage('Task engine not initialized', 'error');
+                return;
+            }
+            
+            try {
+                const userId = document.getElementById('user-id').value;
+                const predictions = await taskEngine.generatePredictedTasks(userId, 24);
+                
+                logMessage(`Generated ${predictions.length} task predictions`, 'success');
+                
+                // Update UI
+                document.getElementById('predicted-tasks').textContent = predictions.length;
+                
+                if (predictions.length > 0) {
+                    const avgConfidence = (predictions.reduce((sum, p) => sum + p.confidence, 0) / predictions.length).toFixed(2);
+                    document.getElementById('confidence-avg').textContent = avgConfidence;
+                    
+                    updatePredictedTasksList(predictions);
+                } else {
+                    document.getElementById('confidence-avg').textContent = '--';
+                }
+                
+            } catch (error) {
+                logMessage(`Failed to generate predictions: ${error.message}`, 'error');
+            }
+        }
+        
+        function updatePredictedTasksList(predictions) {
+            const taskList = document.getElementById('predicted-task-list');
+            
+            if (predictions.length === 0) {
+                taskList.innerHTML = '<p>No predictions available.</p>';
+                return;
+            }
+            
+            const tasksHtml = predictions.map(task => `
+                <div class="task-item">
+                    <div class="task-title">${task.title}</div>
+                    <div class="task-meta">
+                        Priority: ${task.priority} | 
+                        Duration: ${task.estimatedDuration}m | 
+                        Confidence: ${(task.confidence * 100).toFixed(0)}%
+                    </div>
+                </div>
+            `).join('');
+            
+            taskList.innerHTML = tasksHtml;
+        }
+        
+        function clearPredictions() {
+            document.getElementById('predicted-tasks').textContent = '0';
+            document.getElementById('confidence-avg').textContent = '--';
+            document.getElementById('predicted-task-list').innerHTML = '<p>No predictions yet. Click "Generate Predictions" to start.</p>';
+            
+            // Clear stored tasks
+            localStorage.removeItem('predicted_tasks');
+            
+            logMessage('Cleared all predictions', 'info');
+        }
+        
+        function updatePredictedTasks() {
+            // Update from localStorage
+            const storedTasks = JSON.parse(localStorage.getItem('predicted_tasks') || '[]');
+            document.getElementById('predicted-tasks').textContent = storedTasks.length;
+            
+            if (storedTasks.length > 0) {
+                const predictions = storedTasks.map(task => ({
+                    title: task.title,
+                    priority: task.priority,
+                    estimatedDuration: task.duration,
+                    confidence: task.confidence || 0.8
+                }));
+                updatePredictedTasksList(predictions);
+            }
+        }
+        
+        // Environment Controller Functions
+        async function applyEnvironmentProfile() {
+            if (!environmentController) {
+                logMessage('Environment controller not initialized', 'error');
+                return;
+            }
+            
+            try {
+                const profile = document.getElementById('environment-profile').value;
+                const duration = parseInt(document.getElementById('duration').value);
+                
+                await environmentController.applyProfile(profile, duration);
+                logMessage(`Applied ${profile} profile for ${duration} minutes`, 'success');
+                
+            } catch (error) {
+                logMessage(`Failed to apply profile: ${error.message}`, 'error');
+            }
+        }
+        
+        async function revertEnvironment() {
+            if (environmentController) {
+                await environmentController.revertToNormalMode();
+                logMessage('Environment reverted to normal', 'info');
+            }
+        }
+        
+        function toggleAutoOptimization() {
+            if (!environmentController) return;
+            
+            // Toggle auto-optimization (mock implementation)
+            const isEnabled = Math.random() > 0.5; // Mock toggle
+            
+            if (isEnabled) {
+                environmentController.enableAutoOptimization();
+                logMessage('Auto-optimization enabled', 'success');
+            } else {
+                environmentController.disableAutoOptimization();
+                logMessage('Auto-optimization disabled', 'warning');
+            }
+        }
+        
+        function updateDeviceList() {
+            if (!environmentController) return;
+            
+            const devices = environmentController.getConnectedDevices();
+            const deviceList = document.getElementById('device-list');
+            
+            if (devices.length === 0) {
+                deviceList.innerHTML = '<p>No devices discovered yet...</p>';
+                return;
+            }
+            
+            const devicesHtml = devices.map(device => `
+                <div class="device-item">
+                    <div class="device-info">
+                        <div class="device-name">${device.name}</div>
+                        <div class="device-status ${device.status}">${device.type} - ${device.status}</div>
+                    </div>
+                </div>
+            `).join('');
+            
+            deviceList.innerHTML = devicesHtml;
+        }
+        
+        // Demo Scenarios
+        function runDemoScenario() {
+            const scenario = document.getElementById('demo-scenario').value;
+            if (!scenario) return;
+            
+            logMessage(`Running demo scenario: ${scenario}`, 'info');
+            
+            switch (scenario) {
+                case 'deep_work':
+                    runDeepWorkScenario();
+                    break;
+                case 'creative_burst':
+                    runCreativeScenario();
+                    break;
+                case 'meeting_prep':
+                    runMeetingScenario();
+                    break;
+                case 'break_time':
+                    runBreakScenario();
+                    break;
+                case 'distraction_recovery':
+                    runDistractionRecoveryScenario();
+                    break;
+            }
+        }
+        
+        async function runDeepWorkScenario() {
+            logMessage('🎯 Starting Deep Work scenario...', 'info');
+            
+            // Start activity tracking
+            await startActivityTracking();
+            
+            // Apply deep work environment
+            if (environmentController) {
+                await environmentController.optimizeForTask('DEEP_WORK', 50);
+            }
+            
+            // Generate relevant tasks
+            setTimeout(async () => {
+                await generatePredictions();
+            }, 2000);
+            
+            logMessage('Deep Work scenario active - optimal environment configured', 'success');
+        }
+        
+        async function runCreativeScenario() {
+            logMessage('🎨 Starting Creative Flow scenario...', 'info');
+            
+            if (environmentController) {
+                await environmentController.optimizeForTask('CREATIVE', 45);
+            }
+            
+            // Simulate creative task suggestions
+            setTimeout(() => {
+                logMessage('💡 Creative insights mode activated', 'success');
+                showNotification('🎨 Creative Mode', 'Environment optimized for creative work');
+            }, 1000);
+        }
+        
+        async function runMeetingScenario() {
+            logMessage('📅 Preparing for meeting...', 'info');
+            
+            if (environmentController) {
+                await environmentController.optimizeForTask('MEETING', 30);
+            }
+            
+            setTimeout(() => {
+                logMessage('📺 Meeting environment ready', 'success');
+                showNotification('📅 Meeting Ready', 'Lighting and audio optimized for video calls');
+            }, 1000);
+        }
+        
+        async function runBreakScenario() {
+            logMessage('💤 Starting break time...', 'info');
+            
+            if (environmentController) {
+                await environmentController.optimizeForTask('BREAK', 15);
+            }
+            
+            setTimeout(() => {
+                logMessage('🌿 Restorative break environment active', 'success');
+                showNotification('💤 Break Time', 'Environment optimized for relaxation and recovery');
+            }, 1000);
+        }
+        
+        async function runDistractionRecoveryScenario() {
+            logMessage('⚠️ Distraction detected - initiating recovery...', 'warning');
+            
+            // Simulate distraction recovery
+            setTimeout(async () => {
+                if (environmentController) {
+                    await environmentController.optimizeForTask('DEEP_WORK', 25);
+                }
+                logMessage('🎯 Focus environment restored', 'success');
+                showNotification('🎯 Focus Restored', 'Distractions blocked - back to deep work mode');
+            }, 1500);
+        }
+        
+        // Full Demo
+        async function startFullDemo() {
+            if (isFullDemoRunning) {
+                logMessage('Full demo already running', 'warning');
+                return;
+            }
+            
+            isFullDemoRunning = true;
+            logMessage('🚀 Starting comprehensive FocusFlow demo...', 'success');
+            
+            // Initialize all systems
+            await startActivityTracking();
+            
+            // Run through scenarios
+            const scenarios = [
+                { name: 'Deep Work Session', duration: 10000, action: runDeepWorkScenario },
+                { name: 'Break Time', duration: 5000, action: runBreakScenario },
+                { name: 'Creative Burst', duration: 8000, action: runCreativeScenario },
+                { name: 'Meeting Prep', duration: 6000, action: runMeetingScenario }
+            ];
+            
+            let currentScenario = 0;
+            
+            const runNextScenario = async () => {
+                if (currentScenario < scenarios.length && isFullDemoRunning) {
+                    const scenario = scenarios[currentScenario];
+                    logMessage(`📋 Demo Phase ${currentScenario + 1}: ${scenario.name}`, 'info');
+                    
+                    await scenario.action();
+                    
+                    currentScenario++;
+                    setTimeout(runNextScenario, scenario.duration);
+                } else {
+                    logMessage('🎉 Full demo completed!', 'success');
+                    isFullDemoRunning = false;
+                    stopAllSystems();
+                }
+            };
+            
+            // Start the scenario sequence
+            setTimeout(runNextScenario, 2000);
+            
+            // Generate predictions periodically
+            const predictionInterval = setInterval(async () => {
+                if (isFullDemoRunning) {
+                    await generatePredictions();
+                } else {
+                    clearInterval(predictionInterval);
+                }
+            }, 15000);
+            
+            demoIntervals.push(predictionInterval);
+        }
+        
+        function stopAllSystems() {
+            isFullDemoRunning = false;
+            
+            // Clear all intervals
+            demoIntervals.forEach(interval => clearInterval(interval));
+            demoIntervals = [];
+            
+            // Stop tracking
+            stopActivityTracking();
+            
+            // Revert environment
+            revertEnvironment();
+            
+            logMessage('⏹️ All systems stopped', 'warning');
+        }
+        
+        // Utility Functions
+        function logMessage(message, type = 'info') {
+            const log = document.getElementById('system-log');
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${timestamp}] ${message}`;
+            
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        function clearAllLogs() {
+            document.getElementById('system-log').innerHTML = '<div class="log-entry info">System log cleared...</div>';
+        }
+        
+        function showNotification(title, body) {
+            if ('Notification' in window && Notification.permission === 'granted') {
+                new Notification(title, { body });
+            } else {
+                // Fallback to console
+                console.log(`${title}: ${body}`);
+            }
+        }
+        
+        // Request notification permission on load
+        if ('Notification' in window && Notification.permission !== 'granted' && Notification.permission !== 'denied') {
+            Notification.requestPermission();
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Delay initialization to ensure modules are loaded
+            setTimeout(() => {
+                initializeSystems();
+                
+                // Update device list periodically
+                setInterval(updateDeviceList, 5000);
+                
+                // Update predicted tasks from storage
+                updatePredictedTasks();
+            }, 1000);
+        });
+        
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', () => {
+            stopAllSystems();
+        });
+    </script>
+</body>
+</html>
